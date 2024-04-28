@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 100px;
+    background-image: url(images/backgroung.jpg);
+    background-position: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 40px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 20px;
+    background-color: rgba(76, 175, 80, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(76, 175, 80, 0.6);
+}
+
+.weather-container {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+}
+
+.weather-container h2 {
+    color: #333;
+}
+
+.weather-container p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.weather-container img {
+    max-width: 100px;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .weather-container {
+        width: 90%;
+        margin: auto;
+    }
+}

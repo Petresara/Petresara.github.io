@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#portfolio" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="section-about">
+            <div class="about-me-title">
+            </div>
+            <div class="right-column">
+                <h2 class="section-title-about">HELLO EVERYONE</h2>
+                <p class="section-content">I'm Sara Petreska</p>
+                <p class="section-part">Web Developer</p>
+            </div>
+        </section>
+        
+        <section id="education" class="section-education">
+            <h2 class="section-title-education">Education</h2>
+            <div class="education-wrapper">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="front-side">
+                                <h3 class="education-title">Full Stack WEB Developer Academy</h3>
+                                <p class="education-institution">SMX-Academy</p>
+                                <p class="education-date">2023/2024</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="back-side">
+                                <h3 class="education-title">Faculty of Computer Science and Engineering</h3>
+                                <p class="education-institution">Ss. Cyril and Methodius University in Skopje</p>
+                                <p class="education-date">2022/2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="portfolio" class="section-portfolio">
+            <h2 class="section-title-portfolio">My Projects</h2>
+          <div class="projects">
+            <div class="project">
+              <button class="project-btn"><a href="recipe-manager/index.html">See more</a></button>
+            </div>
+  
+            <div class="project">
+            <button class="project-btn"><a href="weather-forecast/index.html">See more</a></button>
+            </div>
+  
+            <div class="project">
+            <button class="project-btn"><a href="calculator/index.html">See more</a></button>
+            </div>
+  
+            <div class="project">
+              <button class="project-btn"><a href="js-modules/index.html">See more</a></button>
+              </div>
+          </div>
+          </section>
+        <div id="bar-chart-container" class="chart-container">
+            <section id="html" class="bar-section">
+                <h2 class="title-skills">My Skills</h2>
+                <ul class="charts-bar">
+                    <li>
+                        <div class="bar bar-html" style="width: 0;"></div>
+                        <span class="label">HTML</span>
+                    </li>
+                    <li>
+                        <div class="bar bar-css" style="width: 0%;"></div>
+                        <span class="label">CSS</span>
+                    </li>
+                    <li>
+                        <div class="bar bar-js" style="width: 0%;"></div>
+                        <span class="label">JavaScript</span>
+                    </li>
+                    <li>
+                        <div class="bar bar-github" style="width: 0%;"></div>
+                        <span class="label">Git/GitHub</span>
+                    </li>
+                    <li>
+                        <div class="bar bar-figma" style="width: 0%;"></div>
+                        <span class="label">Figma</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+
+
+        <section id="contact" class="section-contact">
+            <h2 class="section-contact-title">Contact Me</h2>
+            <div class="contact-box">
+                <form action="#" method="POST" id= "form", class="contact-form">
+                    <div class="form-group">
+                        <label for="fullname" class="label"></label>
+                        <input type="text" id="fullname" name="fullname" class="field" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="label"></label>
+                        <input type="email" id="email" name="email" class="field" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="label"></label>
+                        <textarea id="message" name="message" class="field field-textarea" rows="5" placeholder="Write your message here" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=100005424133544"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/petreskaas_/"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com/in/sara-petreska-28bba7304/"a><i class='bx bxl-linkedin-square'></i></a>
+         </div>
+         <p>&copy;2024 My Portfolio</p>
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>
