@@ -132,15 +132,6 @@ header {
     color: white;
 }
 
-.flip-card {
-    background-color: transparent;
-    width: 500px;
-    height: 300px;
-    perspective: 1000px; 
-    box-shadow: 0px 0px 20px rgba(76, 196, 99, 0.5); 
-    border: 2px solid white;
-}
-
 .education-wrapper {
     margin-left: 350px;
 }
@@ -152,6 +143,15 @@ header {
     font-weight: 400;
     
 }
+.flip-card {
+    background-color: transparent;
+    width: 500px;
+    height: 300px;
+    perspective: 1000px; 
+    box-shadow: 0px 0px 20px rgba(76, 196, 99, 0.5); 
+    border: 2px solid white;
+}
+
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -176,6 +176,7 @@ header {
 
 .flip-card-front {
     color: white;
+    background-color: black;
 }
 .back-side {
     padding: 40px;
@@ -187,7 +188,7 @@ header {
 }
 
 .flip-card-back {
-    background-color: linear-gradient( 	#83dc94, 	#38c872, 	#4cc463);
+    background-color: black;
     color: white;
     transform: rotateY(180deg);
 }
@@ -325,6 +326,8 @@ header {
     background-size: cover;
   }
   .project-btn {
+    width: 100px;
+    height: 50px;
     padding: 10px;
     font-size: 16px;
     border-radius: 5px;
@@ -333,7 +336,7 @@ header {
     background-image: linear-gradient(to right, #ff1493, #fff, #ff83c6); 
     background-size: 200% auto; 
     margin-top: 10px;
-    margin-left: 150px;
+    margin-left: 125px;
 }
 
 .project-btn:hover {
@@ -489,10 +492,10 @@ header {
         padding: 10px;
     }
     .nav-menu {
+        display: flex;
         flex-direction: column;
-        padding: 20px;
+        gap: 30px;
         justify-content: center;
-        margin-left: 60px;
     }
     .section-about {
         height: 300px;
@@ -561,8 +564,8 @@ header {
         transform: none;
     }
     
-    .front-side, .back-side {
-        padding: 40px;
+    .front-side:hover, .back-side {
+        padding: 30px;
         justify-content: center;
     }
     
@@ -574,7 +577,11 @@ header {
 
     .projects {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
-        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .project-btn {
+        margin-left: 110px;
     }
 }
 
